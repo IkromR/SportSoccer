@@ -5,7 +5,7 @@ import androidx.navigation.NavController
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
-import com.radzhabov.sportsoccer.domain.Screens
+import com.radzhabov.sportsoccer.domain.utils.Screens
 import com.radzhabov.sportsoccer.presentation.main.MainScreen
 import com.radzhabov.sportsoccer.presentation.splash.SplashScreenWithAnimation
 
