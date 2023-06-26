@@ -1,4 +1,4 @@
-package com.radzhabov.sportsoccer.ui.theme
+package com.radzhabov.sportsoccer.presentation.theme
 
 import androidx.compose.ui.graphics.Color
 
