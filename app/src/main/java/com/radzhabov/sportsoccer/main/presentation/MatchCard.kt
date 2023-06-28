@@ -21,8 +21,11 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.shadow
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
+import androidx.compose.ui.text.TextStyle
+import androidx.compose.ui.text.style.TextDecoration
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
 import coil.compose.rememberImagePainter
 import com.radzhabov.sportsoccer.main.domain.item.FootballItem
 import com.radzhabov.sportsoccer.main.presentation.viewmodel.MainViewModel
@@ -49,6 +52,12 @@ fun MatchCard(
                 ),
             shape = RoundedCornerShape(size = 15.dp),
         ) {
+            Text(
+                modifier = Modifier.padding(start = 8.dp, bottom = 16.dp),
+                style = TextStyle(color = Color.Gray, textDecoration = TextDecoration.Underline),
+                fontSize = 18.sp,
+                text = "Matches"
+            )
             LazyColumn {
                 for (i in footballs.indices step 2) {
                     val firstTeam = footballs[i]
